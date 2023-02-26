@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { MicrophoneIcon, SearchIcon, XIcon } from '@heroicons/react/solid';
 import User from './User';
 import SearchHeaderOptions from './SearchHeaderOptions';
+
 export default function SearchHeader() {
   const router = useRouter();
   const searchInputRef = useRef(null);
@@ -46,7 +47,6 @@ export default function SearchHeader() {
       </div>
 
       <SearchHeaderOptions />
-
     </header>
   );
 }
